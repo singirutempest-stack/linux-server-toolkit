@@ -1,4 +1,4 @@
-\# Linux Server Toolkit
+\# A collection of Bash tools for Linux administration.
 
 
 
