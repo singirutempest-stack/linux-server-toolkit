@@ -5,8 +5,9 @@ set -u
 THRESHOLD="${1:-80}"
 
 if ! [[ "$THRESHOLD" =~ ^[0-9]+$ ]] || [ "$THRESHOLD" -lt 1 ] || [ "$THRESHOLD" -gt 100 ]; then
-    echo "Usage: $0 [threshold: 1-100]"
-    exit 1
+    echo "Error: threshold must be an integer from 1 to 100." >&2
+    echo "Usage: $0 [threshold]" >&2
+    exit 2
 fi
 
 echo "=== Disk Usage ==="
