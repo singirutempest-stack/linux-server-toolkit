@@ -1,4 +1,4 @@
-\# Linux Server Toolkit
+\# A toolkit for Linux server administration and monitoring.
 
 
 
