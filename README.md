@@ -1,184 +1,96 @@
-\# A collection of Bash tools for Linux administration.
-
-
+# A toolkit for Linux server administration and monitoring.
 
 A small Linux server administration toolkit developed as a DevOps practice project.
 
-
-
-\## Project Purpose
-
-
+## Project Purpose
 
 This project provides simple Bash scripts for checking basic Linux server health information.
 
-
-
 The toolkit helps an administrator quickly inspect:
 
-\- System information
-
-\- Disk usage
-
-\- Memory usage
-
-
+- System information
+- Disk usage
+- Memory usage
 
 The project also demonstrates a professional Git workflow with feature branches, pull requests, code review, merge conflict resolution, and recovery from an incorrect change.
 
-
-
-\## Project Structure
-
-
+## Project Structure
 
 ```text
-
 linux-server-toolkit/
-
 ├── README.md
-
 ├── .gitignore
-
 ├── .editorconfig
-
 ├── scripts/
-
 │   ├── system-info.sh
-
 │   ├── check-disk.sh
-
 │   └── check-memory.sh
-
 ├── docs/
-
 │   ├── installation.md
-
 │   ├── configuration.md
-
 │   ├── troubleshooting.md
-
 │   └── development-workflow.md
-
 └── tests/
-
-&#x20;   └── test-scripts.sh
-
-```
-
-
-
-\## Development Workflow
-
-
+    └── test-scripts.sh
+Development Workflow
 
 The project uses the following workflow:
 
+Create a separate branch for new functionality or fixes.
 
+Implement and test the changes.
 
-1\. Create a separate branch for new functionality or fixes.
+Create a Pull Request.
 
-2\. Implement and test the changes.
+Perform code review.
 
-3\. Create a Pull Request.
+Address review comments.
 
-4\. Perform code review.
+Merge the approved Pull Request into main.
 
-5\. Address review comments.
+The main branch contains stable versions of the project.
 
-6\. Merge the approved Pull Request into `main`.
+Branching Strategy
 
-
-
-The `main` branch contains stable versions of the project.
-
-
-
-\## Branching Strategy
-
-
-
-The `main` branch is used for stable code.
-
-
+The main branch is used for stable code.
 
 Feature branches are used for new functionality:
 
-
-
-```text
-
 feature/<feature-name>
-
-```
-
-
 
 Documentation changes use:
 
-
-
-```text
-
 docs/<change-name>
-
-```
-
-
 
 Bug fixes use:
 
-
-
-```text
-
 fix/<issue-name>
 
-```
+Changes should be merged into main through Pull Requests.
 
-
-
-Changes should be merged into `main` through Pull Requests.
-
-
-
-\## Contribution Process
-
-
+Contribution Process
 
 Before contributing:
 
+Update the local main branch.
 
+Create a separate working branch.
 
-1\. Update the local `main` branch.
+Make a focused change.
 
-2\. Create a separate working branch.
+Test the change.
 
-3\. Make a focused change.
+Create a Pull Request.
 
-4\. Test the change.
+Respond to review comments.
 
-5\. Create a Pull Request.
+Merge only after approval.
 
-6\. Respond to review comments.
-
-7\. Merge only after approval.
-
-
-
-\## Testing Process
-
-
+Testing Process
 
 Shell scripts should be tested on a Linux environment.
 
-
-
 Examples:
-
-
-
-```bash
 
 bash scripts/system-info.sh
 
@@ -188,39 +100,24 @@ bash scripts/check-disk.sh 90
 
 bash scripts/check-memory.sh
 
-```
+The test suite is located in the tests/ directory.
 
-
-
-The test suite is located in the `tests/` directory.
-
-
-
-\## Troubleshooting Process
-
-
+Troubleshooting Process
 
 When a problem occurs:
 
+Reproduce the problem.
 
+Check the command output and exit code.
 
-1\. Reproduce the problem.
+Review the relevant documentation.
 
-2\. Check the command output and exit code.
+Inspect recent Git changes.
 
-3\. Review the relevant documentation.
+Apply and test the fix.
 
-4\. Inspect recent Git changes.
+Document recurring problems in docs/troubleshooting.md.
 
-5\. Apply and test the fix.
-
-6\. Document recurring problems in `docs/troubleshooting.md`.
-
-
-
-\## Project Status
-
-
+Project Status
 
 Under active development.
-
